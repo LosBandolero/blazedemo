@@ -7,8 +7,8 @@ spring:
         role: ADMIN
     datasource:
         url: jdbc:mysql://localhost/BlazeDemo?useSSL=false
-        username: root
-        password: B00Xware
+        username:
+        password:
         driver-class-name: com.mysql.jdbc.Driver
         testWhileIdle: true
         validationQuery: SELECT 1
