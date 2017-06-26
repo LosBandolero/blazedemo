@@ -1,0 +1,70 @@
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "address",
+      "city",
+      "state",
+      "zipCode",
+      "cardType",
+      "cardNumber",
+      "cardExpirationMonth",
+      "cardExpirationYear",
+      "cardNameOnCard",
+      "flightId"
+    ],
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "address": {
+        "type": "string",
+        "minLength": 1
+      },
+      "city": {
+        "type": "string",
+        "minLength": 1
+      },
+      "state": {
+        "type": "string",
+        "minLength": 1
+      },
+      "zipCode": {
+        "type": "string",
+        "minLength": 1
+      },
+      "cardType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "cardNumber": {
+        "type": "string",
+        "minLength": 1
+      },
+      "cardExpirationMonth": {
+        "type": "number"
+      },
+      "cardExpirationYear": {
+        "type": "number"
+      },
+      "cardNameOnCard": {
+        "type": "string",
+        "minLength": 1
+      },
+      "flightId": {
+        "type": "number"
+      }
+    }
+  }
+}

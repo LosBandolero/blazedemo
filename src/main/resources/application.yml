@@ -1,0 +1,38 @@
+spring:
+    application:
+        name: blazemetter
+    security:
+        username: blaze
+        password: Q1w2e3r4
+        role: ADMIN
+    datasource:
+        url: jdbc:mysql://localhost/BlazeDemo?useSSL=false
+        username: root
+        password: B00Xware
+        driver-class-name: com.mysql.jdbc.Driver
+        testWhileIdle: true
+        validationQuery: SELECT 1
+    jpa:
+        database: MYSQL
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+            jadira:
+                usertype:
+                    autoRegisterUserTypes: true
+server:
+    port: 16666
+
+logging:
+  file: logs/blaze-demo-api.log
+
+info:
+    build:
+        artifact: blaze-demo-api
+        name: BlazeDemoAPI
+        description: Api for blaze-demo app
+        version: 1.0

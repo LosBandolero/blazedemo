@@ -1,0 +1,42 @@
+{
+  "type": "array",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "number",
+      "airline",
+      "departureTime",
+      "arrivalTime",
+      "price"
+    ],
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "number": {
+        "type": "number"
+      },
+      "airline": {
+        "type": "string",
+        "minLength": 1
+      },
+      "departureTime": {
+        "type": "string",
+        "minLength": 1
+      },
+      "arrivalTime": {
+        "type": "string",
+        "minLength": 1
+      },
+      "price": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
