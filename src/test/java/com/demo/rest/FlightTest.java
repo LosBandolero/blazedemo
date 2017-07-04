@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.rest;
 
 import org.junit.Test;
 
@@ -7,29 +7,28 @@ import static org.apache.http.HttpStatus.SC_METHOD_NOT_ALLOWED;
 import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.Matchers.lessThan;
 
-public class ArrivalTest extends BaseTest {
-
+public class FlightTest extends BaseTest {
     @Test
     public void checkArrivalEndpointStatus() {
-        prepareGet(ARRIVAL_ALL).statusCode(SC_OK);
+        prepareGet(FLIGHT_ALL).statusCode(SC_OK);
     }
 
     @Test
     public void checkSchemaValidity() {
-        prepareGet(ARRIVAL_ALL)
+        prepareGet(FLIGHT_ALL)
                 .assertThat()
-                .body(matchesJsonSchemaInClasspath("schemas/arrival_schema.json"));
+                .body(matchesJsonSchemaInClasspath("schemas/flight_schema.json"));
     }
 
     @Test
     public void checkResponseTimeAll() {
-        prepareGet(ARRIVAL_ALL)
-                .time(lessThan(2000L));
+        prepareGet(FLIGHT_ALL)
+                .time(lessThan(ENDPOINT_RESPONSE_TIME));
     }
 
     @Test
     public void checkResponseTimeById() {
-        prepareGet(ARRIVAL_ALL_BY_ID)
+        prepareGet(FLIGHT_ALL_BY_ID)
                 .time(lessThan(ENDPOINT_RESPONSE_TIME));
     }
 
@@ -38,21 +37,21 @@ public class ArrivalTest extends BaseTest {
      */
     @Test
     public void checkPutMethod() {
-        preparePut(ARRIVAL_ALL_BY_ID, DUMMY_TEST_JSON)
+        preparePut(DEPARTURE_ALL_BY_ID, DUMMY_TEST_JSON)
                 .then()
                 .statusCode(SC_METHOD_NOT_ALLOWED);
     }
 
     @Test
     public void checkPostMethod() {
-        preparePost(ARRIVAL_ALL, DUMMY_TEST_JSON)
+        preparePost(DEPARTURE_ALL, DUMMY_TEST_JSON)
                 .then()
                 .statusCode(SC_METHOD_NOT_ALLOWED);
     }
 
     @Test
     public void checkDeleteMethod() {
-        prepareDelete(ARRIVAL_ALL_BY_ID)
+        prepareDelete(DEPARTURE_ALL_BY_ID)
                 .statusCode(SC_METHOD_NOT_ALLOWED);
     }
 }

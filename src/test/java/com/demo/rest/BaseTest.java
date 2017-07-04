@@ -1,5 +1,6 @@
-package com.demo;
+package com.demo.rest;
 
+import com.demo.BlazeMetterApi;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;

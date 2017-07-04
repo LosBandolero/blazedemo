@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.rest;
 
 import io.restassured.response.Response;
 import org.junit.Test;
