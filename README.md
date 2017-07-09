@@ -21,3 +21,6 @@ This is simple API create with support of Spring Boot, Gradle and Java.
  2. Execute ./gradlew test (*nix systems) or gradlew.bat (windows systems)
  
 ### Test categories:
+ 1. Unit tests (src/test/com/demo/unit)
+ 2. Rest tests (src/test/com/demo/rest)
+ 3. Bdd tests (src/test/com/demo/bdd)
