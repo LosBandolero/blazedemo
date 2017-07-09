@@ -18,3 +18,5 @@ This is simple API create with support of Spring Boot, Gradle and Java.
 ### To run tests follow this steps:
  1. Open terminal
  2. Execute ./gradlew test (*nix systems) or gradlew.bat (windows systems)
+ 
+### Test categories:
