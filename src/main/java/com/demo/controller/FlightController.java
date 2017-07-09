@@ -35,10 +35,4 @@ public class FlightController {
     public Flight getFlightById(@PathVariable(value = "id") int id) {
         return flightRepository.findAllById(id);
     }
-
-    @RequestMapping(value = "search", method = POST)
-    @ResponseBody
-    public Flight getAllFlightFor(@RequestBody Map<String, String> flightFromTo) {
-        return flightRepository.findAllById(1);
-    }
 }

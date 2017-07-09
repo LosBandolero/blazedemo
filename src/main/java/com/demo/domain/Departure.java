@@ -22,10 +22,6 @@ public class Departure {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getCity() {
         return city;
     }

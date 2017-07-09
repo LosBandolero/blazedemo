@@ -64,5 +64,7 @@ dependencies {
     compile group: 'io.rest-assured', name: 'json-schema-validator', version: '3.0.3'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+    testCompile group: 'org.springframework.security', name: 'spring-security-test'
     testCompile group: 'junit', name: 'junit'
+    testCompile group: 'org.hsqldb', name: 'hsqldb'
 }
