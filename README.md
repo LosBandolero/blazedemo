@@ -1,4 +1,5 @@
 # blazedemo spring boot api 
+[![Build Status](https://travis-ci.org/LosBandolero/blazedemo.svg?branch=master)](https://travis-ci.org/LosBandolero/blazedemo)
 
 This is simple API create with support of Spring Boot, Gradle and Java.
 
@@ -18,3 +19,8 @@ This is simple API create with support of Spring Boot, Gradle and Java.
 ### To run tests follow this steps:
  1. Open terminal
  2. Execute ./gradlew test (*nix systems) or gradlew.bat (windows systems)
+ 
+### Test categories:
+ 1. Unit tests (src/test/com/demo/unit)
+ 2. Rest tests (src/test/com/demo/rest)
+ 3. Bdd tests (src/test/com/demo/bdd)
