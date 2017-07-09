@@ -6,6 +6,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static io.restassured.RestAssured.given;
@@ -17,6 +18,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
         classes = BlazeMetterApi.class,
         webEnvironment = DEFINED_PORT
 )
+@ActiveProfiles("test")
 public abstract class BaseTest {
     static final String ARRIVAL_ALL = "arrival/all";
     static final String ARRIVAL_ALL_BY_ID = "arrival/1";
