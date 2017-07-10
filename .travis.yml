@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 script:
-  gradle clean check
+  gradle clean check --stacktrace
 cache:
   directories:
     - $HOME/.m2
