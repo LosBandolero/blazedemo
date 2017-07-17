@@ -1,3 +1,6 @@
+# blazedemo spring boot api 
+[![Build Status](https://travis-ci.org/LosBandolero/blazedemo.svg?branch=master)](https://travis-ci.org/LosBandolero/blazedemo)
+
 This is simple API create with support of Spring Boot, Gradle and Java.
 
 ### To run application follow this steps:
