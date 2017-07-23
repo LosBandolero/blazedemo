@@ -10,6 +10,6 @@ public class FlightSteps {
 
     @When("^User gets one flight by id (\\d+)$")
     public void userGetsOneFlightById(int id) throws Throwable {
-        LOGGER.info("When - User gets one arrival by id [{}]", id);
+        LOGGER.info("When - User gets one flight by id [{}]", id);
     }
 }

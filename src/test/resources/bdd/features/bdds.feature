@@ -15,3 +15,8 @@ Feature: API BDDs
     Given Flight rest endpoint is up
     When User gets one flight by id 1
     Then Returned JSON object is not null
+
+  Scenario: Receive single user
+    Given Users rest endpoint is up
+    When User gets one user by id 1
+    Then Returned JSON object is not null
