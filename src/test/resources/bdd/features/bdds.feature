@@ -16,6 +16,7 @@ Feature: API BDDs
     When User gets one flight by id 1
     Then Returned JSON object is not null
 
+  @LastScenario
   Scenario: Receive single user
     Given Users rest endpoint is up
     When User gets one user by id 1
