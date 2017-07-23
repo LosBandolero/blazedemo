@@ -10,8 +10,8 @@ public class ArrivalsSteps extends BlazeMetterFeatureTest {
 
     private static final Logger LOGGER = getLogger(ArrivalsSteps.class);
 
-    @When("^User gets one* arrival by id (.+)")
-    public void getOneArrival(int id) {
+    @When("^User gets one* arrival by id (\\d+)$")
+    public void userGetsOneArrivalById(int id) throws Throwable {
         LOGGER.info("When - User gets one arrival by id [{}]", id);
     }
 }
