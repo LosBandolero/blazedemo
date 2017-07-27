@@ -1,4 +1,4 @@
-group 'balzemetter'
+group 'balzemeter'
 version '1.0-SNAPSHOT'
 
 
@@ -31,7 +31,7 @@ jar {
 }
 
 bootRepackage {
-    mainClass = 'com.demo.BlazeMetterApi'
+    mainClass = 'com.demo.BlazeMeterApi'
 }
 
 dependencyManagement {

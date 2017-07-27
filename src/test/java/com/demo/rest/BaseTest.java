@@ -1,6 +1,6 @@
 package com.demo.rest;
 
-import com.demo.BlazeMetterApi;
+import com.demo.BlazeMeterApi;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
@@ -16,7 +16,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(
-        classes = BlazeMetterApi.class,
+        classes = BlazeMeterApi.class,
         webEnvironment = RANDOM_PORT
 )
 @ActiveProfiles("test")

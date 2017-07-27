@@ -1,12 +1,12 @@
 package com.demo.bdd.steps;
 
-import com.demo.bdd.BlazeMetterFeatureTest;
+import com.demo.bdd.BlazeMeterFeatureTest;
 import cucumber.api.java.en.When;
 import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
-public class DepartureSteps extends BlazeMetterFeatureTest {
+public class DepartureSteps extends BlazeMeterFeatureTest {
     private static final Logger LOGGER = getLogger(DepartureSteps.class);
 
     @When("^User gets one departure by id (\\d+)$")

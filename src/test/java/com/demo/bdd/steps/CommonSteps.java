@@ -1,13 +1,13 @@
 package com.demo.bdd.steps;
 
-import com.demo.bdd.BlazeMetterFeatureTest;
+import com.demo.bdd.BlazeMeterFeatureTest;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
-public class CommonSteps extends BlazeMetterFeatureTest {
+public class CommonSteps extends BlazeMeterFeatureTest {
 
     private static final Logger LOGGER = getLogger(CommonSteps.class);
 
