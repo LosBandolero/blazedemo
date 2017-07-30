@@ -60,11 +60,15 @@ dependencies {
     compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2'
     compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-hibernate4'
     compile group: 'mysql', name: 'mysql-connector-java'
+
     compile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.3'
     compile group: 'io.rest-assured', name: 'json-schema-validator', version: '3.0.3'
 
     compile group: 'info.cukes', name: 'cucumber-spring', version: '1.2.5'
     compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
     testCompile group: 'org.springframework.security', name: 'spring-security-test'
