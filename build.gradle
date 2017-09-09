@@ -77,6 +77,7 @@ dependencies {
     testCompile group: 'org.hsqldb', name: 'hsqldb'
 
     testCompile group: 'io.gatling.highcharts', name: 'gatling-charts-highcharts', version: '2.2.5'
+    testCompile group: 'io.gatling', name: 'gatling-jdbc', version: '2.2.5'
 }
 
 task loadTest(type: JavaExec) {

@@ -54,10 +54,9 @@ public class UsersController {
     @ApiOperation(value = "Add user data")
     @RequestMapping(method = POST)
     @ResponseBody
-    public Users setUserData(@RequestBody Map<String, String> user) throws IOException {
+    public void setUserData(@RequestBody Map<String, String> user) throws IOException {
         ObjectMapper om = new ObjectMapper();
         Users u = om.readValue(new ObjectMapper().writeValueAsString(user), Users.class);
         usersRepository.save(u);
-        return u;
     }
 }
