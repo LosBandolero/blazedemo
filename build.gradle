@@ -14,6 +14,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'scala'
 apply plugin: 'idea'
 apply plugin: 'io.spring.dependency-management'
@@ -71,6 +72,8 @@ dependencies {
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 
+    compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.7.1'
+
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
     testCompile group: 'org.springframework.security', name: 'spring-security-test'
     testCompile group: 'junit', name: 'junit'
@@ -78,6 +81,8 @@ dependencies {
 
     testCompile group: 'io.gatling.highcharts', name: 'gatling-charts-highcharts', version: '2.2.5'
     testCompile group: 'io.gatling', name: 'gatling-jdbc', version: '2.2.5'
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
+    testCompile group: 'org.spockframework', name: 'spock-spring', version: '1.1-groovy-2.4'
 }
 
 task loadTest(type: JavaExec) {
