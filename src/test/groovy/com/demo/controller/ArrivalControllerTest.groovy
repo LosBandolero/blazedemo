@@ -22,6 +22,7 @@ class ArrivalControllerTest extends Specification {
     RESTClient restClient = new RESTClient("http://localhost:16666", JSON)
 
     def "Check Arrivals controller"() {
+        given: "Rest endpoint under test"
         restClient.auth.basic 'blaze', 'Q1w2e3r4'
 
         when: "get all arrivals"
