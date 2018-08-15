@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DemoTest {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public void setUp() {
