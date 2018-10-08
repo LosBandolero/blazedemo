@@ -62,6 +62,7 @@ dependencies {
     compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2'
     compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-hibernate4'
     compile group: 'mysql', name: 'mysql-connector-java'
+    compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
 
     compile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.3'
     compile group: 'io.rest-assured', name: 'json-schema-validator', version: '3.0.3'
@@ -85,6 +86,7 @@ dependencies {
     testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
     testCompile group: 'org.spockframework', name: 'spock-spring', version: '1.1-groovy-2.4'
 
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
 }
 
 task loadTest(type: JavaExec) {
